@@ -4,7 +4,14 @@ public class Person {
     protected int id;
     protected String name;
     protected int age;
-
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Person)) {
+            return false;
+        }
+        Person other = (Person) o;
+        return other.id == id;
+    }
 
     public int getId() {
         return id;
@@ -12,11 +19,6 @@ public class Person {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
     }
 
     public Person(int id, String name, int age){
