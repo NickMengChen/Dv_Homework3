@@ -34,8 +34,6 @@ public class Klass {
             students.add(student);
         if (teacher != null)
             teacher.WelcomeNewMember(student);
-        //System.out.println("I am " +  + " ");
-        //assertThat(systemOut().endsWith("I am Tom. I know Jerry has joined Class 2.\n")).isTrue();
         return true;
     }
 

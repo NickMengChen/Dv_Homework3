@@ -5,16 +5,13 @@ import java.util.LinkedList;
 public class Teacher extends Person{
 
     private LinkedList<Klass> linkedList = new LinkedList<Klass>();
-    //private ArrayList<Student> students = new ArrayList<>();
     public void WelcomeNewMember(Student student){
 
         System.out.println("I am " + this.getName() + ". I know " + student.getName() + " has joined Class 2.");
-        //assertThat(systemOut().endsWith("I am Tom. I know Jerry has joined Class 2.\n")).isTrue();
     }
     public void WelcomeNewLeader(Student student){
 
         System.out.println("I am " + this.getName() + ". I know " + student.getName() + " become Leader of Class 2.");
-        //assertThat(systemOut().endsWith("I am Tom. I know Jerry become Leader of Class 2.\n")).isTrue();
     }
 
     public Teacher(int id, String name, int age, LinkedList<Klass> linkedList){

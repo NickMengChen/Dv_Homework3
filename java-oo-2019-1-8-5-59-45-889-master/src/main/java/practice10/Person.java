@@ -26,7 +26,6 @@ public class Person {
         this.age = age;
         this.id = id;
     }
-    //public String introduce()
 
     public void setName(String name) {
         this.name = name;

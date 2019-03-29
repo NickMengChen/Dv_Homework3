@@ -8,7 +8,6 @@ public class Person {
         this.name = name;
         this.age = age;
     }
-    //public String introduce()
 
     public void setName(String name) {
         this.name = name;
@@ -25,13 +24,11 @@ public class Person {
     public int getAge() {
         return age;
     }
-
-    //@Override
+    
     public String introduce() {
         return "My name is " +
                 "" + name + ". I am " + age +
                 " years old.";
     }
-    //assertThat(introduce).isEqualTo("My name is Tom. I am 21 years old.");
 
 }

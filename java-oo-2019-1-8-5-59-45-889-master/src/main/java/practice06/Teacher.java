@@ -41,18 +41,9 @@ public class Teacher extends Person{
     }
 
     public String introduce() {
-        //return super.introduce() + " I am a Student. I am at Class " + Klass + ".";
-//
-//>My name is Tom. I am 21 years old. I am a Teacher. I teach Class 2.
-//
-//        如果klass为空，就会返回：
-//
-//>My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.
 
         if (Klass != -1)
-        {
             return super.introduce() + " I am a Teacher. I teach Class " + Klass + ".";
-        }
         return super.introduce() + " I am a Teacher. I teach No Class.";
     }
 }
